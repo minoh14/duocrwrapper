@@ -61,7 +61,7 @@ router.put('/config', function(req,res,next) {
 router.post('/', function(req, res, next) {
     //const synap_endpoint = process.env.SYNAP_ENDPOINT || "https://ailab.synap.co.kr/sdk/ocr";
     const synap_endpoint = process.env.SYNAP_ENDPOINT || nconf.get("synap:endpoint");
-    const synap_boxes_type = process.env.SYNAP_BOXES_TYPE || "block";
+    const synap_boxes_type = process.env.SYNAP_BOXES_TYPE || "raw";
     res.writeContinue();
     var hash = crypto.createHash('md5').update( req.body.requests[0].image.content).digest('hex');  
     //let buff = new Buffer( req.body.requests[0].image.content, "base64");
