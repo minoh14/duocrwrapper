@@ -9,6 +9,6 @@
         "endpoint" : "https://6qbpea7ipy.apigw.ntruss.com/custom/v1/16549/8bd574fdb05c2dc5017188a2f4c32d5b81963e0a33eccba92404e968c665006d/general"
     },
     "qanda": {
-        "endpoint" : "http://20.249.21.200:5000/predict"
+        "endpoint" : "http://gpu.mybots.co.kr:3000/predict"
     }
 }
